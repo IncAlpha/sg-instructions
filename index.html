@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Как собрать проект и опубликовать</title>
+
+  <!-- метаданные помогают IV -->
+  <meta name="author" content="Василий Петров" />
+  <meta property="article:published_time" content="2025-08-15T10:00:00+03:00" />
+  <meta property="og:title" content="Как собрать проект и опубликовать" />
+  <meta property="og:description" content="Короткая пошаговая инструкция с картинками и GIF." />
+  <meta property="og:image" content="https://example.com/assets/cover.jpg" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* для веб-версии; IV этот CSS игнорирует — это нормально */
+    body { max-width: 720px; margin: 2rem auto; font: 16px/1.6 system-ui, sans-serif; }
+    figure { margin: 1.25rem 0; }
+    figcaption { font-size: .9em; opacity: .8; }
+    .lead { font-size: 1.1em; opacity: .9; }
+    .callout { padding: .75rem 1rem; border-left: 4px solid #999; background: #f7f7f7; }
+    .meta { color:#666; font-size:.9em; }
+  </style>
+</head>
+<body>
+  <article>
+    <header>
+      <img class="hero" src="https://example.com/assets/cover.jpg" alt="Обложка инструкции" />
+      <h1>Как собрать проект и опубликовать</h1>
+      <p class="lead">Пошагово: установка, сборка, публикация. 10 минут.</p>
+      <p class="meta">
+        <time datetime="2025-08-15T10:00:00+03:00">15 августа 2025</time> ·
+        <span class="author">Василий Петров</span>
+      </p>
+    </header>
+
+    <div class="content">
+      <h2 id="reqs">Что понадобится</h2>
+      <ul>
+        <li>Установленный Node.js 18+</li>
+        <li>Аккаунт GitHub</li>
+        <li>Статический хостинг (GitHub Pages / Netlify)</li>
+      </ul>
+
+      <h2 id="steps">Шаги</h2>
+      <ol>
+        <li>
+          Клонируйте репозиторий.
+          <figure>
+            <img src="https://example.com/assets/clone.gif" alt="Процесс клонирования репозитория" />
+            <figcaption>Клонирование репозитория (GIF).</figcaption>
+          </figure>
+        </li>
+        <li>
+          Установите зависимости и соберите:
+          <pre><code>npm ci
+npm run build
+</code></pre>
+        </li>
+        <li>
+          Загрузите сборку на хостинг.
+          <figure>
+            <img src="https://example.com/assets/deploy.png" alt="Загрузка сборки на хостинг" />
+            <figcaption>Деплой в интерфейсе Netlify.</figcaption>
+          </figure>
+        </li>
+      </ol>
+
+      <div class="callout">
+        Совет: для коротких клипов используйте GIF или MP4 без звука — Telegram IV поддерживает анимированные изображения.
+      </div>
+
+      <h2 id="troubleshooting">Если что-то пошло не так</h2>
+      <p>Проверьте версии Node.js и права на репозиторий.</p>
+    </div>
+
+    <footer>
+      <p class="meta">Обновлено: <time datetime="2025-08-18T12:30:00+03:00">18 августа 2025</time></p>
+      <nav class="toc">
+        <a href="#reqs">Что понадобится</a> ·
+        <a href="#steps">Шаги</a> ·
+        <a href="#troubleshooting">Траблшутинг</a>
+      </nav>
+    </footer>
+  </article>
+
+  <!-- элементы, которые мы скроем в IV-шаблоне -->
+  <div class="share">Поделиться: X / Telegram / Facebook</div>
+  <script>/* любые скрипты — для веба; IV их игнорирует */</script>
+</body>
+</html>
